@@ -1,5 +1,8 @@
 package dto;
 
+import exception.InvalidDataException;
+import exception.Validation;
+
 public class VehicleDto {
     private Long id;
     private String brand;
@@ -9,6 +12,13 @@ public class VehicleDto {
     private boolean isAvailable;
 
     public VehicleDto(Long id, String brand, String model, int year, double rentalPrice, boolean isAvailable) {
+
+        if (id == null) throw new InvalidDataException("id can not be null");
+        if (!Validation.isNotEmpty(brand)) throw new InvalidDataException("Brand can not be empty");
+        if (!Validation.isNotEmpty(model)) throw new InvalidDataException("model can not be empty");
+        if (!Validation.validDateCheck(year)) throw new InvalidDataException("year can not be in the future");
+        if (!Validation.notNegative(rentalPrice)) throw new InvalidDataException("price can not be negative");
+
         this.id = id;
         this.brand = brand;
         this.model = model;
