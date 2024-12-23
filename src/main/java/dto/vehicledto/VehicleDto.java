@@ -1,4 +1,4 @@
-package dto;
+package dto.vehicledto;
 
 import exception.InvalidDataException;
 import exception.Validation;

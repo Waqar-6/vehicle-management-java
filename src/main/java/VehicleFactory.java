@@ -1,11 +1,11 @@
-import classes.Car;
-import classes.MotorCycle;
-import classes.Van;
-import classes.Vehicle;
-import dto.CarDto;
-import dto.MotorCycleDto;
-import dto.VanDto;
-import dto.VehicleDto;
+import domain.vehicle.Car;
+import domain.vehicle.MotorCycle;
+import domain.vehicle.Van;
+import domain.vehicle.Vehicle;
+import dto.vehicledto.CarDto;
+import dto.vehicledto.MotorCycleDto;
+import dto.vehicledto.VanDto;
+import dto.vehicledto.VehicleDto;
 import exception.InvalidDataException;
 import exception.Validation;
 

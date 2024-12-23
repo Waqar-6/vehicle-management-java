@@ -1,4 +1,4 @@
-package classes;
+package domain.vehicle;
 
 public abstract class Vehicle {
 
@@ -47,7 +47,4 @@ public abstract class Vehicle {
                 this.id, this.brand, this.model, this.year, this.rentalPrice, this.isAvailable);
     }
 
-    public double calculateRentalCost (int days) {return this.rentalPrice * days;}
-
-    public abstract String start();
 }

@@ -1,11 +1,9 @@
-package dto;
+package dto.vehicledto;
 
 import exception.InvalidDataException;
 import exception.Validation;
 
-import javax.xml.validation.Validator;
-
-public class CarDto extends VehicleDto{
+public class CarDto extends VehicleDto {
     private int numDoors;
     private String fuelType;
     public CarDto(Long id, String brand, String model, int year, double rentalPrice, boolean isAvailable, int numDoors, String fuelType) {

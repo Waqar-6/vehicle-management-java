@@ -1,4 +1,4 @@
-package classes;
+package domain.vehicle;
 
 public class MotorCycle extends Vehicle {
 
@@ -10,10 +10,7 @@ public class MotorCycle extends Vehicle {
         this.isLicenseRequired = isLicenseRequired;
     }
 
-    @Override
-    public String start() {
-        return "Motorcycle stared";
-    }
+
 
     public String getEngineSize() {return engineSize;}
 

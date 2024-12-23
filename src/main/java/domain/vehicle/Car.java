@@ -1,4 +1,4 @@
-package classes;
+package domain.vehicle;
 
 public class Car extends Vehicle {
 
@@ -11,10 +11,6 @@ public class Car extends Vehicle {
         this.fuelType = fuelType;
     }
 
-    @Override
-    public String start() {
-        return "classes.Car Started";
-    }
 
     public int getNumDoors() {return numDoors;}
 

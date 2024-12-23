@@ -1,9 +1,9 @@
-package dto;
+package dto.vehicledto;
 
 import exception.InvalidDataException;
 import exception.Validation;
 
-public class MotorCycleDto extends VehicleDto{
+public class MotorCycleDto extends VehicleDto {
 
     private String engineSize;
     private boolean isLicenseRequired;

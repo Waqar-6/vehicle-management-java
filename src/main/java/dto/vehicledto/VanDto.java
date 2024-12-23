@@ -1,9 +1,9 @@
-package dto;
+package dto.vehicledto;
 
 import exception.InvalidDataException;
 import exception.Validation;
 
-public class VanDto extends VehicleDto{
+public class VanDto extends VehicleDto {
 
     private String cargoVolume;
     boolean hasLiftGate;

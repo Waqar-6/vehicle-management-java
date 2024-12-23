@@ -1,4 +1,4 @@
-package classes;
+package domain.vehicle;
 
 public class Van extends Vehicle {
 
@@ -10,10 +10,7 @@ public class Van extends Vehicle {
         this.hasLiftGate = hasLiftGate;
     }
 
-    @Override
-    public String start() {
-        return "classes.Van Started";
-    }
+
 
     public String getCargoVolume() {
         return cargoVolume;
