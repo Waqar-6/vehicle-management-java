@@ -1,6 +1,7 @@
 package db;
 
 
+import domain.rentalrecord.entity.RentalRecord;
 import domain.user.entity.User;
 import domain.vehicle.entity.Vehicle;
 
@@ -11,10 +12,12 @@ public class DataStorage {
 
     private List<User> listOfUser;
     private List<Vehicle> listOfVehicles;
+    private List<RentalRecord> listOfRentalRecords;
 
     public DataStorage() {
         this.listOfUser = new ArrayList<>();
         this.listOfVehicles = new ArrayList<>();
+        this.listOfRentalRecords = new ArrayList<>();
     }
 
     public List<User> getListOfUser() {
@@ -33,7 +36,11 @@ public class DataStorage {
         this.listOfVehicles = listOfVehicles;
     }
 
+    public List<RentalRecord> getListOfRentalRecords() {
+        return listOfRentalRecords;
+    }
 
-
-
+    public void setListOfRentalRecords(List<RentalRecord> listOfRentalRecords) {
+        this.listOfRentalRecords = listOfRentalRecords;
+    }
 }

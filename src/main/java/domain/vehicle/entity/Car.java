@@ -11,6 +11,10 @@ public class Car extends Vehicle {
         this.fuelType = fuelType;
     }
 
+    public Car () {
+        super();
+    }
+
 
     public int getNumDoors() {return numDoors;}
 

@@ -10,7 +10,7 @@ public class MotorCycle extends Vehicle {
         this.isLicenseRequired = isLicenseRequired;
     }
 
-
+    public MotorCycle () {}
 
     public String getEngineSize() {return engineSize;}
 

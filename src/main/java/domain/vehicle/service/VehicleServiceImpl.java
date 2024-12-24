@@ -44,6 +44,18 @@ public class VehicleServiceImpl implements IVehicleService{
     }
 
     @Override
+    public VehicleDto getVehicleById(Long id) {
+        Vehicle vehicle = findById(id);
+        return switch (vehicle) {
+            case null -> throw new ResourceNotFoundException("Vehicle", "id", id.toString());
+            case Car car -> VehicleMapper.mapToCarDto(car, new CarDto());
+            case MotorCycle motorCycle -> VehicleMapper.mapToMotorcycleDto(motorCycle, new MotorCycleDto());
+            case Van van -> VehicleMapper.mapToVanDto(van, new VanDto());
+            default -> null;
+        };
+    }
+
+    @Override
     public List<VehicleDto> getAvailableVehicles() {
         return vehicleDb.stream().filter(Vehicle::isAvailable)
                 .map(vehicle -> {

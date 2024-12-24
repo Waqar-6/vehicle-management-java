@@ -10,7 +10,9 @@ public class Van extends Vehicle {
         this.hasLiftGate = hasLiftGate;
     }
 
-
+    public Van () {
+        super();
+    }
 
     public String getCargoVolume() {
         return cargoVolume;
