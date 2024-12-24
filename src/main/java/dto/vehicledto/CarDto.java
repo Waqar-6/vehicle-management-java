@@ -19,6 +19,10 @@ public class CarDto extends VehicleDto {
         this.fuelType = fuelType;
     }
 
+    public CarDto () {
+        super();
+    }
+
     public int getNumDoors() {
         return numDoors;
     }

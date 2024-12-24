@@ -18,6 +18,10 @@ public class MotorCycleDto extends VehicleDto {
         this.isLicenseRequired = isLicenseRequired;
     }
 
+    public MotorCycleDto () {
+        super();
+    }
+
     public String getEngineSize() {
         return engineSize;
     }

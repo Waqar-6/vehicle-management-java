@@ -1,7 +1,8 @@
 package db;
 
+
 import domain.user.entity.User;
-import domain.vehicle.Vehicle;
+import domain.vehicle.entity.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,4 +32,8 @@ public class DataStorage {
     public void setListOfVehicles(List<Vehicle> listOfVehicles) {
         this.listOfVehicles = listOfVehicles;
     }
+
+
+
+
 }

@@ -17,6 +17,10 @@ public class VanDto extends VehicleDto {
         this.hasLiftGate = hasLiftGate;
     }
 
+    public VanDto () {
+        super();
+    }
+
     public String getCargoVolume() {
         return cargoVolume;
     }

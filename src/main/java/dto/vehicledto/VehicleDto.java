@@ -27,6 +27,10 @@ public class VehicleDto {
         this.isAvailable = isAvailable;
     }
 
+    public VehicleDto() {
+
+    }
+
     public Long getId() {
         return id;
     }

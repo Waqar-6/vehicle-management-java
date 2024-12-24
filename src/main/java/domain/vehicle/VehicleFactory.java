@@ -1,7 +1,9 @@
-import domain.vehicle.Car;
-import domain.vehicle.MotorCycle;
-import domain.vehicle.Van;
-import domain.vehicle.Vehicle;
+package domain.vehicle;
+
+import domain.vehicle.entity.Car;
+import domain.vehicle.entity.MotorCycle;
+import domain.vehicle.entity.Van;
+import domain.vehicle.entity.Vehicle;
 import dto.vehicledto.CarDto;
 import dto.vehicledto.MotorCycleDto;
 import dto.vehicledto.VanDto;

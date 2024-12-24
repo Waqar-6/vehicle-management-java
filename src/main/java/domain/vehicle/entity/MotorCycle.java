@@ -1,4 +1,4 @@
-package domain.vehicle;
+package domain.vehicle.entity;
 
 public class MotorCycle extends Vehicle {
 
